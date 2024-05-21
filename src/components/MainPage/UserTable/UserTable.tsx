@@ -93,8 +93,8 @@ export const UserTable = () => {
                         </Link>
                     </ListItem>
                 )}
-                {isLoading && <div>Loading...</div>}
             </List>}
+            {isLoading && <div>Loading...</div>}
             {error && <span>{error}</span>}
             {users?.length !== totalCount && <div ref={observerTarget}/>}
         </div>
